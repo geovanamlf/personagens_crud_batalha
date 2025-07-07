@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Personagens</title>
+</head>
+<body>
+  <h1>Personagens Cadastrados</h1>
+  <ul>
+    <% @personagens.each do |p| %>
+      <li>
+        <strong><%= p[:nome] %></strong> -
+        <%= p[:classe].capitalize %> <%= p[:raca].capitalize %><br>
+        Vida: <%= p[:vida] %> |
+        Força: <%= p[:forca] %> |
+        Defesa: <%= p[:defesa] %> |
+        Inteligência: <%= p[:inteligencia] %> |
+        Velocidade: <%= p[:velocidade] %>
+      </li>
+    <% end %>
+  </ul>
+</body>
+</html>

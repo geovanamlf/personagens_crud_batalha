@@ -4,14 +4,14 @@
   <label>Personagem 1:</label><br>
   <select name="id1" required>
     <% @personagens.each do |p| %>
-      <option value="<%= p[:id] %>"><%= p[:nome] %> (#{p[:classe]} #{p[:raca]})</option>
+      <option value="<%= p[:id] %>"><%= p[:nome] %> (<%= p[:classe] %> <%= p[:raca] %>)</option>
     <% end %>
   </select><br><br>
 
   <label>Personagem 2:</label><br>
   <select name="id2" required>
     <% @personagens.each do |p| %>
-      <option value="<%= p[:id] %>"><%= p[:nome] %> (#{p[:classe]} #{p[:raca]})</option>
+      <option value="<%= p[:id] %>"><%= p[:nome] %> (<%= p[:classe] %> <%= p[:raca] %>)</option>
     <% end %>
   </select><br><br>
 

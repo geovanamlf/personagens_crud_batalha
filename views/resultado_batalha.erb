@@ -1,0 +1,12 @@
+<h1>Resultado da Batalha</h1>
+
+<% @log.each do |linha| %>
+  <p><%= linha %></p>
+<% end %>
+
+<h2>🏆 Vitória de <%= @vencedor[:nome] %>!</h2>
+
+<br>
+<a href="/personagens">← Voltar à lista</a>
+
+

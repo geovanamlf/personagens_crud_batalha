@@ -1,0 +1,22 @@
+<h1>Simular Batalha</h1>
+
+<form action="/batalha" method="post">
+  <label>Personagem 1:</label><br>
+  <select name="id1" required>
+    <% @personagens.each do |p| %>
+      <option value="<%= p[:id] %>"><%= p[:nome] %> (#{p[:classe]} #{p[:raca]})</option>
+    <% end %>
+  </select><br><br>
+
+  <label>Personagem 2:</label><br>
+  <select name="id2" required>
+    <% @personagens.each do |p| %>
+      <option value="<%= p[:id] %>"><%= p[:nome] %> (#{p[:classe]} #{p[:raca]})</option>
+    <% end %>
+  </select><br><br>
+
+  <button type="submit">Iniciar Batalha</button>
+</form>
+
+<br>
+<a href="/personagens">← Voltar à lista</a>

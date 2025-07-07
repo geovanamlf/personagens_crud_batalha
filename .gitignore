@@ -1,0 +1,21 @@
+# Arquivos Ruby
+*.gem
+*.rbc
+
+# Logs e temporários
+*.log
+*.tmp
+
+# Diretórios de cache
+.bundle/
+
+# Arquivos de configuração
+database.json
+
+# Arquivos de sistema
+.DS_Store
+*.swp
+
+# Arquivos de documentação
+ideia_sistema_rpg.txt
+

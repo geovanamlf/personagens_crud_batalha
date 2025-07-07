@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Criar Personagem</title>
+</head>
+<body>
+  <h1>Criar novo personagem</h1>
+
+  <form action="/personagens" method="post">
+    <label>Nome:</label><br>
+    <input type="text" name="nome" required><br><br>
+
+    <label>Raça:</label><br>
+    <select name="raca" required>
+      <% @racas.each do |r| %>
+        <option value="<%= r %>"><%= r.capitalize %></option>
+      <% end %>
+    </select><br><br>
+
+    <label>Classe:</label><br>
+    <select name="classe" required>
+      <% @classes.each do |c| %>
+        <option value="<%= c %>"><%= c.capitalize %></option>
+      <% end %>
+    </select><br><br>
+
+    <label>Arma 1:</label><br>
+    <select name="arma1" required>
+      <% @armas.each do |a| %>
+        <option value="<%= a %>"><%= a.capitalize %></option>
+      <% end %>
+    </select><br><br>
+
+    <label>Arma 2:</label><br>
+    <select name="arma2" required>
+      <% @armas.each do |a| %>
+        <option value="<%= a %>"><%= a.capitalize %></option>
+      <% end %>
+    </select><br><br>
+
+    <button type="submit">Criar</button>
+  </form>
+
+  <br>
+  <a href="/personagens">← Voltar à lista</a>
+</body>
+</html>

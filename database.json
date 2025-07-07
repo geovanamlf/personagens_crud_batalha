@@ -1,3 +1,28 @@
 [
-
+  {
+    "id": 1,
+    "nome": "Geovana Maga Suprema",
+    "raca": "humano",
+    "classe": "mago",
+    "arma1": "cajado",
+    "arma2": "varinha",
+    "vida": 66,
+    "forca": 33,
+    "defesa": 33,
+    "inteligencia": 150,
+    "velocidade": 55
+  },
+  {
+    "id": 2,
+    "nome": "Geovana Assassina",
+    "raca": "humano",
+    "classe": "assassino",
+    "arma1": "adaga",
+    "arma2": "foice",
+    "vida": 88,
+    "forca": 101,
+    "defesa": 44,
+    "inteligencia": 60,
+    "velocidade": 106
+  }
 ]
